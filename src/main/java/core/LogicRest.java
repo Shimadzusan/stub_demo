@@ -13,8 +13,22 @@ public class LogicRest {
 
         JSONObject jsonObject = new JSONObject(requestBody);
         int number = jsonObject.getInt("number_1");
-        String result = "{\"result\":" + (number * number) + "}";
-        System.out.println(result);
+        String result = "";
+
+        String operation = jsonObject.getString("operation");
+        switch (operation) {
+            case "square":
+                NumberSquare numberSquare = new NumberSquare();
+                int square = numberSquare.returnNumberSquare(number);
+                result = "{\"result\":" + square + "}";
+                break;
+
+            case "square_root":
+                SquareRoot squareRoot = new SquareRoot();
+                double root = squareRoot.returnNumberSquareRoot(number);
+                result = "{\"result\":" + root + "}";
+                break;
+        }
 
         return result;
     }
