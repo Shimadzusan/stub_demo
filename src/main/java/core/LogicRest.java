@@ -1,11 +1,13 @@
 package core;
 
 import org.json.JSONObject;
+import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RestController;
 
 @RestController
+@CrossOrigin
 public class LogicRest {
     @PostMapping("/sendNumber")
     public String sendNumber(@RequestBody String requestBody) {
