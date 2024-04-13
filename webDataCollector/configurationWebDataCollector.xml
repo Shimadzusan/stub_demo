@@ -7,12 +7,12 @@
             <mode>test_test</mode>
 			<typeOfSourceExtractor>java_net</typeOfSourceExtractor>
         </case>
-        <case>
+        <!--<case>
             <fileConfig>avito.csv</fileConfig>
             <thread>4</thread>
             <mode>standard</mode>
 			<typeOfSourceExtractor>cmd_curl</typeOfSourceExtractor>
-        </case>
+        </case>-->
 		<case>
             <fileConfig>justJoinItCentralEurope.csv</fileConfig>
             <thread>4</thread>
