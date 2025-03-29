@@ -34,7 +34,6 @@ public class LogicRest {
                 influx.sendData("square_root", number);
                 break;
         }
-
         return result;
     }
 }
